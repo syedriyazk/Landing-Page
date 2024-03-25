@@ -89,6 +89,7 @@ html, body{
 }
 
 .right img{
+    position: relative;
     background-size: cover;
     height:100%;
     width: 100%;
@@ -162,6 +163,11 @@ html, body{
     .right{
         width: 100%;
         height: 55%;
+    }
+
+    .right img{
+        height: 100%;
+        width: 100%;
         background-size: cover;
     }
 }
