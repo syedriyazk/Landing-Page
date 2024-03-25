@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gill Sans Extrabold", sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+
+}
+
+.navbar h2{  
+    font-size: 2vw;
+    font-weight: 800;
+
+}
+.nav-button{
+    font-size: 13px;
+    padding: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+.nav-ops{
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+ 
+}
+.nav-ops i{
+    font-weight: 800;
+    display:none;
+}
+
+.content{
+    height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.left{
+    height: 100%;
+    width: 50%;
+    padding: 9vw 4vw;
+}
+.left h1{
+    font-size: 3vw;
+    line-height: 120%;
+}
+
+.left h1 span{
+    font-size: 3vw;
+    font-family: cursive;
+    font-weight: 900;
+    color: lightgreen;
+}
+.left p{
+    font-size: 15px;
+    font-weight: 300;
+    width: 80%;
+    color: #302f2f;
+    margin-top: 0.5vw;
+    margin-bottom: 2vw;
+    line-height: 120%;
+}
+
+.right{
+    height:100%;
+    width: 50%;
+}
+
+.right img{
+    background-size: cover;
+    height:100%;
+    width: 100%;
+}
+
+.content button{
+    font-size: 13px;
+    padding: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: yellow;
+    font-weight: 500;
+    text-align: center;
+}
+
+.content button:hover{
+    background-color: rgb(232, 232, 98);
+}
+
+/* responsive navbar media query */
+@media (max-width:600px){
+    .navbar{
+        color: #000000;
+        padding: 0 6vw;
+        height: 60px;
+    }
+    .navbar h2{
+        font-size: 5vw;
+    }
+
+    .navbar h4{
+            font-size: 3vw;
+            display:none;   
+    }
+    .nav-button{
+        display:none;
+    }
+
+    .navbar i {
+        font-size: 6vw;
+        display: block;
+    }
+
+    .content{
+        height: calc(100vh - 60px);
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+        height: 55%;
+    }
+    .left h1 {
+        font-size: 9vw;
+        line-height: 9vw;
+    }
+    
+    .left h1 span{
+        font-size: 9vw;
+    }
+
+    .left p {
+       line-height: 125%;
+       width: 90%;
+       margin-top:7vw;
+       margin-bottom: 8vw;
+    }
+    
+    .right{
+        width: 100%;
+        height: 55%;
+        background-size: cover;
+    }
+}
